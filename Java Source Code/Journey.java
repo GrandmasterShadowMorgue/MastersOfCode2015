@@ -1,19 +1,25 @@
+/**********************************
+*	A class to represent a        *
+*	journey taken by a user       *
+*                                 *
+***********************************/
+
 public class Journey{
 	
 	private Station startPoint;
 	private Station endPoint;
-	private double balance;
+	private double monthlyBalance;
 	
 	public Journey(){
 		this.startPoint = new Station();
 		this.endPoint = new Station();
-		this.balance = 0.0;
+		this.monthlyBalance = 0.0;
 	}
 	
 	public Journey(Station start, Station end ){
 		this.startPoint = start;
 		this.endPoint = end;
-		this.balance = 0.0;
+		this.monthlyBalance = 0.0;
 	}
 	
 	public void setStart(Station startingPos){
@@ -33,10 +39,10 @@ public class Journey{
 	}
 	
 	public void setBalance(double bal){
-		this.balance = bal;
+		this.monthlyBalance = bal;
 	}
 	
 	public double getBalance(){
-		return this.balance;
+		return this.monthlyBalance;
 	}
 }
